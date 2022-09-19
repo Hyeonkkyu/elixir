@@ -6,16 +6,9 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Elixir</title>
+	<title>Insert title here</title>
 </head>
 <body>
-<h1>
-	작업은 여기서
-</h1>
-<a href="${path}/user/signIn">로그인페이지</a>
-<a href="${path}/user/signUp">회원가입페이지</a>
-<a href="${path}/product/main">상품페이지</a>
-
-<P>노동자들에게 인사를... ${hello}</P>
+<h1>여기는 회원가입 메뉴입니다.</h1>
 </body>
 </html>
