@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>
-	작업은 여기서
+	작업은 여기서 합니다.
 </h1>
 <a href="${path}/user/signIn">로그인페이지</a>
 <a href="${path}/user/signUp">회원가입페이지</a>
