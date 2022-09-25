@@ -6,9 +6,11 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
-	<title>Insert title here</title>
+	<link rel="stylesheet" href="${path}/resources/css/common.css">
+	<link rel="stylesheet" href="${path}/resources/css/main.css">
 </head>
 <body>
+	<jsp:include page="../header.jsp"/>
 	<h1>여기는 상품메인 메뉴입니다.</h1>
 </body>
 </html>

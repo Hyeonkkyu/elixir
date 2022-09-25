@@ -1,4 +1,76 @@
-.logo {
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: 400;
+*{
+    outline: 1px solid #F00;
+}
+
+.inner {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.Wrap section {
+    margin-bottom: 100px;
+}
+
+/* ---------- MAIN VISUAL ---------- */
+
+.Wrap .mainVisual {
+
+}
+
+.Wrap .mainVisual .mainSlider {
+
+}
+
+.Wrap .mainVisual .mainSlider li {
+    padding: 150px;
+    background: url("/resources/img/image_1595912733936_1000.jpg") no-repeat center center/cover;
+}
+
+.Wrap .mainVisual .mainSlider li .desc {
+    color: white; /*  난제 삭제  */
+}
+.Wrap .mainVisual .mainSlider li .desc h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Wrap .mainVisual .mainSlider li .desc p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    white-space: pre-wrap;
+}
+
+/* ---------- NEW BOOK ---------- */
+
+.Wrap .newBook {
+
+}
+
+.Wrap .newBook>h2 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Wrap .newBook>p {
+    font-size: 15px;
+    color: #2f2f2f;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Wrap .newBook .newBookSlider {
+    display: flex;
+    gap: 50px;
+}
+
+.Wrap .newBook .newBookSlider .product figure {
+}
+
+.Wrap .newBook .newBookSlider .product>h2 {
+}
+
+.Wrap .newBook .newBookSlider .product>p {
 }
