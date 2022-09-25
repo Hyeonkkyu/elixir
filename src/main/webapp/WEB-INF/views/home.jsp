@@ -6,16 +6,13 @@
 <html>
 <head>
 	<meta charset="UTF-8"/>
+	<link rel="icon" href="" />
 	<title>Elixir</title>
 </head>
 <body>
-<h1>
-	작업은 여기서 합니다.
-</h1>
-<a href="${path}/user/signIn">로그인페이지</a>
-<a href="${path}/user/signUp">회원가입페이지</a>
-<a href="${path}/product/main">상품페이지</a>
+<jsp:include page="header.jsp"/>
 
-<P>노동자들에게 인사를... ${hello}</P>
+
+<%--<P>노동자들에게 인사를... ${hello}</P>--%>
 </body>
 </html>
