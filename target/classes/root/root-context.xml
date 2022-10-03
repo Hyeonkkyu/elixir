@@ -35,6 +35,12 @@
 	</bean>
 	
 	<mybatis-spring:scan base-package="com.elixir.mvc.dao"/>
+
+	<!--제대로 입력되지 않거나 오류가 날 경우 롤백처리를 해주는 장치-->
+	<bean id="transactionManager"
+		  class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="ds"/>
+	</bean>
 	
 		
 </beans>

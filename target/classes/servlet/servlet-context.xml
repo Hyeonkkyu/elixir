@@ -21,8 +21,6 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.elixir.mvc.controller, com.eilxir.mvc.service" />
-	
-	
+	<context:component-scan base-package="com.elixir.mvc.controller, com.elixir.mvc.service" />
 	
 </beans:beans>
