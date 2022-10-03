@@ -32,6 +32,7 @@ public class ApiController {
     @GetMapping("/getUser")
     public UserVO getUser() {
         UserVO user = us.getUser();
+        System.out.println(user);
         System.out.println("유저정보 요청...");
         return user;
     }
