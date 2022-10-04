@@ -17,6 +17,6 @@ public class HomeController {
 	@GetMapping("/")
 	public String home(Model model) {
 		model.addAttribute("hello", "hello! good day for you!");
-		return "home";
+		return "apiHome";
 	}
 }

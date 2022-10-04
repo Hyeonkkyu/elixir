@@ -55,7 +55,7 @@ public class UserController {
 	@PostMapping("changePwSubmit")
 	public String changePwSubmit(String uPw) {
 		//패스워드 변경
-		return "home";
+		return "backup/home";
 	}
 
 }
