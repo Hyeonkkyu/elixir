@@ -1,5 +1,7 @@
 package com.elixir.mvc.commons;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class UserVO {
@@ -11,9 +13,10 @@ public class UserVO {
     private String user_nickname;
     private String user_birth;
     private String user_phone;
-    private String add;
-    private String add_detail;
-    private String add_post;
+    private String user_add;
+    private String user_add_detail;
+    private String user_add_post;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss")
     private Date reg_date;
     private Date update_date;
     private Date visit_date;
@@ -75,28 +78,28 @@ public class UserVO {
         this.user_phone = user_phone;
     }
 
-    public String getAdd() {
-        return add;
+    public String getUser_add() {
+        return user_add;
     }
 
-    public void setAdd(String add) {
-        this.add = add;
+    public void setUser_add(String user_add) {
+        this.user_add = user_add;
     }
 
-    public String getAdd_detail() {
-        return add_detail;
+    public String getUser_add_detail() {
+        return user_add_detail;
     }
 
-    public void setAdd_detail(String add_detail) {
-        this.add_detail = add_detail;
+    public void setUser_add_detail(String user_add_detail) {
+        this.user_add_detail = user_add_detail;
     }
 
-    public String getAdd_post() {
-        return add_post;
+    public String getUser_add_post() {
+        return user_add_post;
     }
 
-    public void setAdd_post(String add_post) {
-        this.add_post = add_post;
+    public void setUser_add_post(String user_add_post) {
+        this.user_add_post = user_add_post;
     }
 
     public Date getReg_date() {
@@ -141,9 +144,9 @@ public class UserVO {
                 ", user_nickname='" + user_nickname + '\'' +
                 ", user_birth='" + user_birth + '\'' +
                 ", user_phone='" + user_phone + '\'' +
-                ", add='" + add + '\'' +
-                ", add_detail='" + add_detail + '\'' +
-                ", add_post='" + add_post + '\'' +
+                ", user_add='" + user_add + '\'' +
+                ", user_add_detail='" + user_add_detail + '\'' +
+                ", user_add_post='" + user_add_post + '\'' +
                 ", reg_date=" + reg_date +
                 ", update_date=" + update_date +
                 ", visit_date=" + visit_date +

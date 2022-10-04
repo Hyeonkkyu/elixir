@@ -1,6 +1,7 @@
 package com.elixir.mvc.controller;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import com.elixir.mvc.commons.UserVO;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.inject.Inject;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping(value = "/api", produces = "application/json; charset=utf8")
 public class ApiController {
 
     @Inject
@@ -35,6 +36,12 @@ public class ApiController {
         System.out.println(user);
         System.out.println("유저정보 요청...");
         return user;
+    }
+
+    @GetMapping("/getUserList")
+    public List<UserVO> getUserList() {
+        List<UserVO> userList = us.getUserList();
+        return userList;
     }
 
 }
